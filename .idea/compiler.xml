@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="utils-service" />
+        <module name="auth-service" />
+        <module name="restaurant-service" />
+        <module name="realtime-service" />
+        <module name="rider-service" />
+        <module name="admin-service" />
+      </profile>
+    </annotationProcessing>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="admin-service" options="-parameters" />
+      <module name="auth-service" options="-parameters" />
+      <module name="realtime-service" options="-parameters" />
+      <module name="restaurant-service" options="-parameters" />
+      <module name="rider-service" options="-parameters" />
+      <module name="utils-service" options="-parameters" />
+    </option>
+  </component>
+</project>

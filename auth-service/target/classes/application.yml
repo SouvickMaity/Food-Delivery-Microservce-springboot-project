@@ -1,0 +1,18 @@
+server:
+  port: ${PORT:5000}
+
+spring:
+  application:
+    name: auth-service
+  data:
+    mongodb:
+      uri: mongodb+srv://demo:1234@cluster0.i92u1va.mongodb.net/?appName=Cluster0
+      database: ${DB_NAME:Food_Delivery}
+
+app:
+  jwt:
+    secret: ${JWT_SEC:souvick12345678901234567890123456}
+    expiration-days: 15
+  google:
+    client-id: 167678015605-osehtche8bhi0s4atuq8i73bjv18c0ld.apps.googleusercontent.com
+    client-secret:  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

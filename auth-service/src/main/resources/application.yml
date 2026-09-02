@@ -1,0 +1,18 @@
+server:
+  port: ${PORT:5000}
+
+spring:
+  application:
+    name: auth-service
+  data:
+    mongodb:
+      uri:
+      database: ${DB_NAME:Food_Delivery}
+
+app:
+  jwt:
+    secret: ${JWT_SEC:souvick12345678901234567890123456}
+    expiration-days: 15
+  google:
+    client-id:
+    client-secret:

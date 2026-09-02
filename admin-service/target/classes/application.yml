@@ -1,0 +1,15 @@
+server:
+  port: ${PORT:5008}
+
+spring:
+  application:
+    name: admin-service
+  data:
+    mongodb:
+      uri: mongodb+srv://demo:1234@cluster0.i92u1va.mongodb.net/?appName=Cluster0
+      database: ${DB_NAME:Food_Delivery}
+
+app:
+  jwt:
+    secret: ${JWT_SEC:souvick12345678901234567890123456}
+
